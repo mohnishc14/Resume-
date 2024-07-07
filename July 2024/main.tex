@@ -1,0 +1,207 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Mohnish Sonsare} \\ \vspace{1pt}
+    \small 612-282-6707 $|$ \href{mailto:sonsa021@umn.edu}{\underline{sonsa021@umn.edu}} $|$ 
+    \href{https://linkedin.com/in/mohnishsonsare}{\underline{linkedin.com/in/mohnish}} $|$
+    \href{https://github.com/mohnishc14}{\underline{github.com/mohnish}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Minnesota}{Minneapolis, MN}
+      {Bachelor of Science in Computer Science}{Aug. 2022 -- Dec 2025}
+    \resumeItem{Relevant Coursework: Program Design \&  Development, Machine Architecture, Statistical Regression, ML Optimization, Advanced Programming Principles}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Undergraduate Research Assistant (\href{https://grouplens.org}{\textit{GroupLens.org}})}{Jan 2024 -- Present}
+      {University of Minnesota, Twin Cities}{Minneapolis, MN}
+      \resumeItemListStart
+        \resumeItem{Wrote code in a team of three in the development of an interactive tool aimed at making virtual meetings more inclusive using Jitsi, React, Sequelize, and Express.js.}
+        \resumeItem{Assisted in developing logic for API calls to enhance interactivity with a chat bot.}
+        \resumeItem{Added endpoints and components with comprehensive unit integration testing.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Undergraduate Teaching Assistant}{Sept 2023 -- Present}
+      {University of Minnesota, Twin Cities}{Minneapolis, MN}
+      \resumeItemListStart
+        \resumeItem{TA for Introduction to Algorithms and Data Structure (Java). Conducted weekly office hours and led 3+ labs, overseeing 30+ students in each session.}
+        \resumeItem{Collaborated with faculty mentors and fellow Teaching Assistants to enhance assessment, lab write-ups, and other educational materials.}
+        \resumeItem{Assisted in the grading process, including midterms, to provide constructive feedback to students and contribute to fair and consistent evaluation practices.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Year Round Student (\href{https://algorithmicthinking.org}{\textit{algorithmicthinking.org}})}{June 2021 -- May 2022}
+      {Program in Algorithmic and Combinatorial Thinking}{New Jersey, NY}
+      \resumeItemListStart
+        \resumeItem{Received a full tuition scholarship for a year-long selective program on mathematical foundations of computer science by Dr. Rajiv Gandhi at Rutgers Camden and UPenn.}
+        \resumeItem{Studied topics in discrete mathematics and explored theoretical and fundamental topics in probability, set theory, advanced permutations and combinations, and linearity of expectation.}
+        \resumeItem{Learned about fields of computer science including computational geometry, cryptography, the probabilistic method, and planar graph coloring from guest speakers.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Summer Student (\href{https://ai-4-all.org}{\textit{AI4ALL}})}{May 2021 -- June 2022}
+      {University of Maryland, College Park}{College Park, MD}
+      \resumeItemListStart
+        \resumeItem{Worked on a \href{https://sites.google.com/umd.edu/ai4allproject-showcase2021/attack} {\textit{research project}}  on how neural networks can be trained to avoid adversarial attacks. }
+        \resumeItem {Presented the advantages of an adversarially-trained robust model over a standard model to UMD faculty and students.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Drone Delivery Simulation Model} $|$ \emph{C++, TypeScript, Node.js, Docker}}{Jan 2024 -- May 2024}
+          \resumeItemListStart
+            \resumeItem{Collaborated with a teammate in biweekly sprints to develop a data collection model to track drone speed, distance travelled, and delivery time to optimize drone delivery routes.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Leadership}
+\resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Secretary, Competitive Programming Club} (\href{https://cpp.umn.edu}{\textit{umncpp.org}})} {Mar 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Moderated a Discord community of 700 members, documented detailed meeting minutes, and regularly updated the club’s website.}
+            \resumeItem{Trained students in ICPC problem-solving, participated in competitive coding competitions, honed algorithm skills, and practiced on Kattis.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL, JavaScript, HTML/CSS, x86, OCaml, R} \\
+     \textbf{Frameworks}{: React, Node.js,, JUnit, WordPress, GTest Suite} \\
+     \textbf{Developer Tools}{: Git, Docker, Jira,  VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
